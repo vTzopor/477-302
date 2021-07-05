@@ -12,8 +12,10 @@
     </script>
     <title>ทบทวน html</title>
 </head>
+
+<body>
 <!-- br เอาไว้ขึ้นบรรทัดใหม่ -->    
-<br>
+    <br>
      <!-- heading text-->
     <h1 name="title-h1" id="title-h1">Test title h1</h1>
     <h2 name="title-h2" id="title-h2">Test title h1</h2>
@@ -114,3 +116,28 @@
     </table>
     
     <!-- form -->
+    <h2>เข้าสู่ระบบ</h2>
+    <form method="GET" action="check_login.html">
+        <label for="username">รหัสผู้ใช้งาน</label> 
+        <input type="text">
+        <br>
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" id="password">
+        <br>
+        <input type="checkbox">จำรหัสผู้ใช้งาน
+        <br>
+        <input type="radio" name="user_type">นักศึกษา
+        <input type="radio" name="user_type">อาจารย์
+        <br>
+        <input type="submit" value="เข้าสู่ระบบ">
+        <input type="reset" value="ยกเลิก">
+    </form>
+
+    <input type="button" value="ไม่ใช่ submit ไม่ใช่ reset">
+
+
+</body>
+
+</html>
+
+    

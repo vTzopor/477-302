@@ -117,17 +117,27 @@
     
     <!-- form -->
     <h2>เข้าสู่ระบบ</h2>
-    <form method="GET" action="check_login.html">
-        <label for="username">รหัสผู้ใช้งาน</label> 
-        <input type="text">
+    <form method="GET" action="check_login.html" enctype="multipart/form-data">
+        <!--label for="username">รหัสผู้ใช้งาน</label--> 
+        <input type="text" id="username" placeholder="รหัสผู้ใช้งาน">
         <br>
-        <label for="password">รหัสผ่าน</label>
-        <input type="password" id="password">
+        <!--label for="password">รหัสผ่าน</label-->
+        <input type="password" id="password" placeholder="รหัสผ่าน">
         <br>
         <input type="checkbox">จำรหัสผู้ใช้งาน
         <br>
         <input type="radio" name="user_type">นักศึกษา
         <input type="radio" name="user_type">อาจารย์
+        <br>
+        <!--label for="desc">รายละเอียด</label-->
+        <textarea id="desc" rows="5" placeholder="รายละเอียด"></textarea>
+        <br>
+        <input type="file">
+        <br>
+        <select name="type">สถานะ
+            <option value="1">ใช้งาน</option>
+            <option value="0">ยกเลิก</option>
+        </select>
         <br>
         <input type="submit" value="เข้าสู่ระบบ">
         <input type="reset" value="ยกเลิก">

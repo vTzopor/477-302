@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        p {color: green; font-family: 'Kanit', sans-serif; 
-    font-size: 3em;}
-        b {color: rgb(128, 0, 0); font-family: 'Kanit', sans-serif; }
-        p {font-weight: 500; text-align: center;}
-        a {font: normal 2em;}
+        p {color: green; font-family: 'Kanit', sans-serif; font-size: 3em;}
+        p {font-weight: 800; text-align: center;}
+        b {color: rgb(128, 0, 0); font-family: 'Kanit', sans-serif; font-weight: 800}
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="text/css" type="text/css">
     <script>
 
     </script>
@@ -21,7 +23,10 @@
     <p h1>welcome to new world</h1>
     <h2>This page about community game</h2>
     <h3>Ex.Pubg CSGO Valorant</h3>
-    <h4>หน้าแรก</h4></div><h4>เกี่ยวกับเรา</h4><h4>ข้อมูล</h4>
+    <h3 style="display: inline">หน้าแรก</h1> 
+    <h3 style="display: inline">เกี่ยวกับเรา</h2>
+    <h3 style="display: inline">ข้อมูลลงทะเบียน</h3>
+    
     <br>
     <img src="images/unnamed.png" ait="PUBG" width="200" height="200">
     <img src="images/3.jpg" ait="CSGO" width="200" height="200">
@@ -31,7 +36,7 @@
     <h2><a href="https://accounts.pubg.com/login" target="_blank">CSGO</a></h2>
     <h2><a href="https://accounts.pubg.com/login" target="_blank">Valorant</a></h2>
     <br>
-    <b h2>เข้าสู่ระบบ</h2>
+    <b h1>เข้าสู่ระบบ</h1>
 <form method="GET" action="check_login.html" enctype="multipart/form-data"> 
     <input type="text" id="username" placeholder="รหัสผู้ใช้งาน">
     <br>
@@ -41,7 +46,28 @@
     <br>
     <input type="submit" value="เข้าสู่ระบบ">
     <input type="reset" value="ยกเลิก">
+    <br>
+    <h2>*แบบสอบถาม</h2>
+    <select name="type">สถานะ
+        <option value="์Nothing">คำนำหน้าชื่อ</option>
+        <option value="นาย">นาย</option>
+        <option value="นางสาว">นางสาว</option>
+    </select>
+    <br>
+     <input type="text" name="name" placeholder="ชื่อ">
+     <br>
+     <input type="text" name="lastname" placeholder="นามสกุล">
+     <br>
+     <br>
+     <textarea id="desc" rows="5" placeholder="รายละเอียด"></textarea>
+     <br>
+     แนบรูปโปรไฟล์ตัวละครเกมของคุณ
+     <br>
+     <input type="file">
 </form>
+     <br>
+     <input type="button" value="ลงทะเบียนสมัครสมาชิก">
+
 
 
 </body>

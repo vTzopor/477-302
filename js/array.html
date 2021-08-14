@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Array Example</p>
+    <p id = "demo"></p>
+<!--
+    <script>
+        var wdays = ["mondey", "Tuesday", "Wednesday", "Thursday", "Friday"];
+        document.getElementById("demo").innerHTML =
+        "Length =" + wdays.length + "<br>"+
+        "Print all" + wdays + "<br>" +
+        "sort =" + wdays.sort() + "<br>"; 
+    </script> -->
+
+     <script>
+         // covid infacted cases 7 days
+         var covid_cases = {seventh:18500, sixth:18000, fifth:17500, fourth:17000, third:16500, second:16000, first:15500};
+         var total_cases = (covid_cases["seventh"]) + (covid_cases["sixth"]) + (covid_cases["fifth"]) 
+         + (covid_cases["fourth"]) + (covid_cases["third"]) + (covid_cases["second"]) + (covid_cases["first"]);
+         document.getElementById("demo").innerHTML =
+         "Number of cases in seventh day" + covid_cases["seventh"] +
+         "<br>Total cases in 7 days" + total_cases;
+    </script>
+
+    
+</body>
+</html> 
